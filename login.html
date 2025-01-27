@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Registration</title>
+    <link rel="stylesheet" href="C:\Users\annie\OneDrive\Desktop\Documents\E-project\styling\crazy.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+				<li><a href="login.html">Login</a></li>
+                <li><a href="products.html">Product Catalog</a></li>
+                <li><a href="cart.html">Shopping Cart</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+                <li><a href="invoice.html">Invoices</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <div class="form-box">
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <label for="trn">TRN:</label>
+                    <input type="text" id="trn" name="trn" required>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+
+            <div class="form-box">
+                <h2>Register</h2>
+                <form id="registrationForm">
+                    <label for="regFirstName">First Name:</label>
+                    <input type="text" id="regFirstName" name="regFirstName" required>
+
+                    <label for="regLastName">Last Name:</label>
+                    <input type="text" id="regLastName" name="regLastName" required>
+
+                    <label for="regDob">Date of Birth:</label>
+                    <input type="date" id="regDob" name="regDob" required>
+
+                    <label for="regGender">Gender:</label>
+                    <select id="regGender" name="regGender" required>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+
+                    <label for="regTrn">TRN:</label>
+                    <input type="text" id="regTrn" name="regTrn" pattern="\d{3}-\d{3}-\d{3}" placeholder="000-000-000" required>
+
+                    <label for="regPassword">Password:</label>
+                    <input type="password" id="regPassword" name="regPassword" minlength="8" required>
+
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="C:\Users\annie\OneDrive\Desktop\Documents\E-project\js\loginsc.js"></script>
+</body>
+</html>
